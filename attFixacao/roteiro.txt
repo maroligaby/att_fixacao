@@ -1,0 +1,36 @@
+criar modelo visual studio:
+	-criar novo projeto
+	-aplicativo web asp.net core (models-views-controllers)
+(desabilitar https)
+
+instalar pacotes:
+-Ferramentas
+	- gerenciador de pacotes do nuget 
+		- Microsoft.AspNetCore.Identity.EntityFrameworkCore
+		- Microsoft.EntityFrameworkCore.Design
+		- Microsoft.EntityFrameworkCore.SqlServer
+	 (lembrar de mudar a versão para a versão do projeto)
+
+Criar classe:
+- models (botao direito)
+- adicionar
+- novo item
+- classe
+
+Definir DbContext:
+- criar pasta Data no projeto
+- criar classe AppDbContext.cs
+
+Configuração AppSettings.json
+- colocar dados e credenciais
+
+Parametros de configuração:
+Buider no prgram.cs
+
+
+Criar migration:
+- Abrir console
+- entrar no projeto
+- dotnet tool install --global dotnet-ef
+- dotnet ef migrations add Initial
+- dotnet ef database update
